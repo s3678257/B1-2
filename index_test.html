@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Where to get tested for COVID-19</title>
+    <script src="assets/js/jquery.min.table.js"></script>
+    <script src="assets/js/tableXR.js"></script>
+</head>
+<body>
+    <div id="root" style="width: 800px"></div>
+    <script type="text/javascript">
+        $('#root').tableXR({
+            //表格标题
+            title:'Testing sites list',
+            //表格头部设置
+            columns:[
+                {data:'suburb',title:'Suburb'},
+                {data:'location',title:'Location'},
+                {data:'sitetype',title:'Site type'},
+                {data:'waitingtime',title:'Current waiting time'},
+                {data:'openinghours',title:'Opening hours'},
+
+            ],
+            //表格数据：
+            data:[
+                {suburb:'Altona',location:'Altona North Respiratory Clinic',sitetype:'97',waitingtime:'A',openinghours:''},
+                {suburb:'West Footscray',location:'Cohealth',sitetype:'95',waitingtime:'A',openinghours:''},
+                {suburb:'Moonee Ponds',location:'Melbourne Pathology',sitetype:'95',waitingtime:'A',openinghours:''},
+                {suburb:'Fairfield',location:'4Cyte Pathology',sitetype:'97',waitingtime:'A',openinghours:''},
+                {suburb:'North Melbourne',location:'Melbourne Pathology',sitetype:'88',waitingtime:'B',openinghours:''},
+                {suburb:'Collingwood',location:'Cohealth',sitetype:'90',waitingtime:'A',openinghours:''},
+                {suburb:'Melbourne CBD',location:'4Cyte Pathology',sitetype:'92',waitingtime:'A',openinghours:''},
+                {suburb:'Balaclava',location:'Melbourne Pathology',sitetype:'89',waitingtime:'B',openinghours:''},
+                {suburb:'Prahran',location:'Prahran Respiratory Clinic',sitetype:'91',waitingtime:'A',openinghours:''},
+                {suburb:'South Melbourne',location:'Montague Street',sitetype:'95',waitingtime:'A',openinghours:''},
+                {suburb:'Melbourne CBD',location:'Bourke Street Melbourne',sitetype:'95',waitingtime:'A',openinghours:''},
+                {suburb:'Port Melbourne',location:'Port Melbourne Respiratory Clinic',sitetype:'95',waitingtime:'A',openinghours:''},
+                {suburb:'Albert Park',location:'Aughtie Walk',sitetype:'95',level:'A',openinghours:''},
+            ]
+        })
+    </script>
+</body>
+</html>
