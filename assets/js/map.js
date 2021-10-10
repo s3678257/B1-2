@@ -53,7 +53,7 @@ function initMap() {
         content: contentString3,
     });
     const contentString4 =
-        "<p><h1>Montague Street</h1></p>"+
+        "<p><h5>Montague Street</h5></p>"+
         "<p><h6>Location:</h6>\n " +
         "Montague St\n" +
         "South Melbourne VIC 3205</p>"+
@@ -65,7 +65,7 @@ function initMap() {
     });
 
     const contentString5 =
-        "<p><h1>Prahran Respiratory Clinic</h1></p>"+
+        "<p><h5>Prahran Respiratory Clinic</h5></p>"+
         "<p><h6>Location:</h6>\n " +
         "240 Malvern Rd\n" +
         "Prahran VIC 3181</p>"+
@@ -77,7 +77,7 @@ function initMap() {
     });
 
     const contentString6 =
-        "<p><h1>Melbourne Pathology</h1></p>"+
+        "<p><h5>Melbourne Pathology</h5></p>"+
         "<p><h6>Location:</h6>\n " +
         "287B Carlisle St\n" +
         "Balaclava VIC 3183</p>"+
@@ -89,7 +89,7 @@ function initMap() {
     });
 
     const contentString7 =
-        "<p><h1>4Cyte Pathology</h1></p>"+
+        "<p><h5>4Cyte Pathology</h5></p>"+
         "<p><h6>Location:</h6>\n " +
         "231 Russell St\n" +
         "Melbourne VIC 3000</p>"+
@@ -101,7 +101,7 @@ function initMap() {
     });
 
     const contentString8 =
-        "<p><h1>Cohealth</h1></p>"+
+        "<p><h5>Cohealth</h5></p>"+
         "<p><h6>Location:</h6>\n " +
         "365 Hoddle St\n" +
         "Collingwood VIC 3066</p>"+
@@ -113,7 +113,7 @@ function initMap() {
     });
 
     const contentString9 =
-        "<p><h1>Melbourne Pathology</h1></p>"+
+        "<p><h5>Melbourne Pathology</h5></p>"+
         "<p><h6>Location:</h6>\n " +
         "70 Alfred St\n" +
         "North Melbourne VIC 3051</p>"+
@@ -125,7 +125,7 @@ function initMap() {
     });
 
     const contentString10 =
-        "<p><h1>4Cyte Pathology</h1></p>"+
+        "<p><h5>4Cyte Pathology</h5></p>"+
         "<p><h6>Location:</h6>\n " +
         "202 Station St\n" +
         "Fairfield VIC 3078</p>"+
@@ -137,7 +137,7 @@ function initMap() {
     });
 
     const contentString11 =
-        "<p><h1>Melbourne Pathology</h1></p>"+
+        "<p><h5>Melbourne Pathology</h5></p>"+
         "<p><h6>Location:</h6>\n " +
         "45A Hall St\n" +
         "Moonee Ponds VIC 3039</p>"+
@@ -149,7 +149,7 @@ function initMap() {
     });
 
     const contentString12 =
-        "<p><h1>Cohealth</h1></p>"+
+        "<p><h5>Cohealth</h5></p>"+
         "<p><h6>Location:</h6>\n " +
         "78 Paisley St\n" +
         "Footscray VIC 3011</p>"+
@@ -160,7 +160,7 @@ function initMap() {
         content: contentString12,
     });
     const contentString13 =
-        "<p><h1>Altona North Respiratory Clinic</h1></p>"+
+        "<p><h5>Altona North Respiratory Clinic</h5></p>"+
         "<p><h6>Location:</h6>\n " +
         "REAR OF, 6/230 Blackshaws Rd\n" +
         "Altona North VIC 3025</p>"+
@@ -239,105 +239,105 @@ function initMap() {
     });
 
 
-    map.addListener("center_changed", () => {
-        // 3 seconds after the center of the map has changed, pan back to the
-        // marker.
-        window.setTimeout(() => {
-            map.panTo(marker.getPosition());
-        }, 3000);
-    });
-
-    map.addListener("center_changed", () => {
-        // 3 seconds after the center of the map has changed, pan back to the
-        // marker.
-        window.setTimeout(() => {
-            map.panTo(marker2.getPosition());
-        }, 3000);
-    });
-
-    map.addListener("center_changed", () => {
-        // 3 seconds after the center of the map has changed, pan back to the
-        // marker.
-        window.setTimeout(() => {
-            map.panTo(marker3.getPosition());
-        }, 3000);
-    });
-
-    map.addListener("center_changed", () => {
-        // 3 seconds after the center of the map has changed, pan back to the
-        // marker.
-        window.setTimeout(() => {
-            map.panTo(marker4.getPosition());
-        }, 3000);
-    });
-
-    map.addListener("center_changed", () => {
-        // 3 seconds after the center of the map has changed, pan back to the
-        // marker.
-        window.setTimeout(() => {
-            map.panTo(marker5.getPosition());
-        }, 3000);
-    });
-
-    map.addListener("center_changed", () => {
-        // 3 seconds after the center of the map has changed, pan back to the
-        // marker.
-        window.setTimeout(() => {
-            map.panTo(marker6.getPosition());
-        }, 3000);
-    });
-
-    map.addListener("center_changed", () => {
-        // 3 seconds after the center of the map has changed, pan back to the
-        // marker.
-        window.setTimeout(() => {
-            map.panTo(marker7.getPosition());
-        }, 3000);
-    });
-
-    map.addListener("center_changed", () => {
-        // 3 seconds after the center of the map has changed, pan back to the
-        // marker.
-        window.setTimeout(() => {
-            map.panTo(marker8.getPosition());
-        }, 3000);
-    });
-
-    map.addListener("center_changed", () => {
-        // 3 seconds after the center of the map has changed, pan back to the
-        // marker.
-        window.setTimeout(() => {
-            map.panTo(marker9.getPosition());
-        }, 3000);
-    });
-    map.addListener("center_changed", () => {
-        // 3 seconds after the center of the map has changed, pan back to the
-        // marker.
-        window.setTimeout(() => {
-            map.panTo(marker10.getPosition());
-        }, 3000);
-    });
-    map.addListener("center_changed", () => {
-        // 3 seconds after the center of the map has changed, pan back to the
-        // marker.
-        window.setTimeout(() => {
-            map.panTo(marker11.getPosition());
-        }, 3000);
-    });
-    map.addListener("center_changed", () => {
-        // 3 seconds after the center of the map has changed, pan back to the
-        // marker.
-        window.setTimeout(() => {
-            map.panTo(marker12.getPosition());
-        }, 3000);
-    });
-    map.addListener("center_changed", () => {
-        // 3 seconds after the center of the map has changed, pan back to the
-        // marker.
-        window.setTimeout(() => {
-            map.panTo(marker13.getPosition());
-        }, 3000);
-    });
+    // map.addListener("center_changed", () => {
+    //     // 3 seconds after the center of the map has changed, pan back to the
+    //     // marker.
+    //     window.setTimeout(() => {
+    //         map.panTo(marker.getPosition());
+    //     }, 3000);
+    // });
+    //
+    // map.addListener("center_changed", () => {
+    //     // 3 seconds after the center of the map has changed, pan back to the
+    //     // marker.
+    //     window.setTimeout(() => {
+    //         map.panTo(marker2.getPosition());
+    //     }, 3000);
+    // });
+    //
+    // map.addListener("center_changed", () => {
+    //     // 3 seconds after the center of the map has changed, pan back to the
+    //     // marker.
+    //     window.setTimeout(() => {
+    //         map.panTo(marker3.getPosition());
+    //     }, 3000);
+    // });
+    //
+    // map.addListener("center_changed", () => {
+    //     // 3 seconds after the center of the map has changed, pan back to the
+    //     // marker.
+    //     window.setTimeout(() => {
+    //         map.panTo(marker4.getPosition());
+    //     }, 3000);
+    // });
+    //
+    // map.addListener("center_changed", () => {
+    //     // 3 seconds after the center of the map has changed, pan back to the
+    //     // marker.
+    //     window.setTimeout(() => {
+    //         map.panTo(marker5.getPosition());
+    //     }, 3000);
+    // });
+    //
+    // map.addListener("center_changed", () => {
+    //     // 3 seconds after the center of the map has changed, pan back to the
+    //     // marker.
+    //     window.setTimeout(() => {
+    //         map.panTo(marker6.getPosition());
+    //     }, 3000);
+    // });
+    //
+    // map.addListener("center_changed", () => {
+    //     // 3 seconds after the center of the map has changed, pan back to the
+    //     // marker.
+    //     window.setTimeout(() => {
+    //         map.panTo(marker7.getPosition());
+    //     }, 3000);
+    // });
+    //
+    // map.addListener("center_changed", () => {
+    //     // 3 seconds after the center of the map has changed, pan back to the
+    //     // marker.
+    //     window.setTimeout(() => {
+    //         map.panTo(marker8.getPosition());
+    //     }, 3000);
+    // });
+    //
+    // map.addListener("center_changed", () => {
+    //     // 3 seconds after the center of the map has changed, pan back to the
+    //     // marker.
+    //     window.setTimeout(() => {
+    //         map.panTo(marker9.getPosition());
+    //     }, 3000);
+    // });
+    // map.addListener("center_changed", () => {
+    //     // 3 seconds after the center of the map has changed, pan back to the
+    //     // marker.
+    //     window.setTimeout(() => {
+    //         map.panTo(marker10.getPosition());
+    //     }, 3000);
+    // });
+    // map.addListener("center_changed", () => {
+    //     // 3 seconds after the center of the map has changed, pan back to the
+    //     // marker.
+    //     window.setTimeout(() => {
+    //         map.panTo(marker11.getPosition());
+    //     }, 3000);
+    // });
+    // map.addListener("center_changed", () => {
+    //     // 3 seconds after the center of the map has changed, pan back to the
+    //     // marker.
+    //     window.setTimeout(() => {
+    //         map.panTo(marker12.getPosition());
+    //     }, 3000);
+    // });
+    // map.addListener("center_changed", () => {
+    //     // 3 seconds after the center of the map has changed, pan back to the
+    //     // marker.
+    //     window.setTimeout(() => {
+    //         map.panTo(marker13.getPosition());
+    //     }, 3000);
+    // });
     marker.addListener("click", () => {
         map.setZoom(16);
         map.setCenter(marker.getPosition());
