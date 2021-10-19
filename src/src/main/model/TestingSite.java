@@ -1,6 +1,6 @@
-package main;
+package model;
 
-public class Main {
+public class TestingSite {
 
     public static void main(String[] args){
         System.out.println(1);
