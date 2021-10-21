@@ -46,6 +46,9 @@ public class TestingSiteDao {
 
             }
             statement.close();
+
+            System.out.println("This is a test.");
+
         } catch (SQLException e) {
             System.err.println(e.getMessage());
         }
