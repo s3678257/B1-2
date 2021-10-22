@@ -19,6 +19,7 @@ public class getMoreInfoDao {
             Statement statement = conn.createStatement();
             statement.setQueryTimeout(30);
             String query = "SELECT OpeningHour,\n" +
+                    "       SiteType,\n" +
                     "       PhoneNum,\n" +
                     "       Status,\n"+
                     "       Limitation"+
@@ -29,6 +30,7 @@ public class getMoreInfoDao {
                 TestingSite testingSite = new TestingSite();
 
                 testingSite.setOpeningHour(results.getString("OpeningHour"));
+                testingSite.setSiteType(results.getString("SiteType"));
                 testingSite.setPhoneNum(results.getString("PhoneNum"));
                 testingSite.setStatus(results.getString("Status"));
                 testingSite.setLimitation(results.getString("Limitation"));

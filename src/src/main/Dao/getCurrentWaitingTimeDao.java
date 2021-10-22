@@ -6,26 +6,26 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class getTestingSiteLocationDao {
+public class getCurrentWaitingTimeDao {
     static Connection conn = null;
     static PreparedStatement prst = null;
 
+    private TestingSite testingsite = new TestingSite();
 
-
-    public static final List<TestingSite> getTestingSiteLocation() throws Exception{
-        ArrayList<TestingSite> TestingSiteLocation = new ArrayList<>();
+    public static final List<TestingSite> getCurrentWaitingTime() throws Exception{
+        ArrayList<TestingSite> CurrentWaitingTime = new ArrayList<>();
         try {
             conn = JDBCutil.getCon();
             Statement statement = conn.createStatement();
             statement.setQueryTimeout(30);
-            String query = "SELECT Location" + "  FROM testingsite";
+            String query = "SELECT Waiting_time" + "  FROM testingsite";
             ResultSet results = statement.executeQuery(query);
 
             while (results.next()) {
                 TestingSite testingSite = new TestingSite();
 
-                testingSite.setLocation(results.getString("Location"));
-                TestingSiteLocation.add(testingSite);
+                testingSite.setWaiting_time(results.getString("Waiting_time"));
+                CurrentWaitingTime.add(testingSite);
 
             }
             statement.close();
@@ -34,7 +34,7 @@ public class getTestingSiteLocationDao {
         } catch (SQLException e) {
             System.err.println(e.getMessage());
         }
-        return TestingSiteLocation;
+        return CurrentWaitingTime;
     }
 
 }

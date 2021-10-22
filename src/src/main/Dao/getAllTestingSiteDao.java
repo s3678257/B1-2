@@ -24,6 +24,7 @@ public class getAllTestingSiteDao {
                     "       Distance,\n" +
                     "       Num_people,\n" +
                     "       OpeningHour,\n" +
+                    "       SiteType,\n" +
                     "       PhoneNum,\n" +
                     "       Status,\n"+
                     "       Limitation"+
@@ -39,6 +40,7 @@ public class getAllTestingSiteDao {
                 testingSite.setDistance(results.getString("Distance"));
                 testingSite.setNum_people(results.getString("Num_people"));
                 testingSite.setOpeningHour(results.getString("OpeningHour"));
+                testingSite.setSiteType(results.getString("SiteType"));
                 testingSite.setPhoneNum(results.getString("PhoneNum"));
                 testingSite.setStatus(results.getString("Status"));
                 testingSite.setLimitation(results.getString("Limitation"));

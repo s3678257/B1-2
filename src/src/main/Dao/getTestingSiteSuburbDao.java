@@ -18,7 +18,7 @@ public class getTestingSiteSuburbDao {
             conn = JDBCutil.getCon();
             Statement statement = conn.createStatement();
             statement.setQueryTimeout(30);
-            String query = "SELECT Suburb,\n" + "  FROM testingsite";
+            String query = "SELECT Suburb" + "  FROM testingsite";
             ResultSet results = statement.executeQuery(query);
 
             while (results.next()) {
