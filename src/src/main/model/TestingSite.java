@@ -6,7 +6,7 @@ public class TestingSite {
     private String Location;
     private String Waiting_time;
     private String Distance;
-    private int Num_people;
+    private String Num_people;
     private String OpeningHour;
     private String SiteType;
     private String PhoneNum;
@@ -17,7 +17,7 @@ public class TestingSite {
     public TestingSite() {
     }
 
-    public TestingSite(String Suburb, String Location, String Waiting_time, String Distance, int Num_people, String OpeningHour, String SiteType, String PhoneNum, String Status, String Limitation) {
+    public TestingSite(String Suburb, String Location, String Waiting_time, String Distance, String Num_people, String OpeningHour, String SiteType, String PhoneNum, String Status, String Limitation) {
         this.Suburb = Suburb;
         this.Location = Location;
         this.Waiting_time = Waiting_time;
@@ -55,11 +55,11 @@ public class TestingSite {
         Distance = distance;
     }
 
-    public int getNum_people() {
+    public String getNum_people() {
         return Num_people;
     }
 
-    public void setNum_people(int num_people) {
+    public void setNum_people(String num_people) {
         Num_people = num_people;
     }
 
